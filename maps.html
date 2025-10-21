@@ -13,7 +13,14 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <style>
     #map {
-        height: 500px;
+        height: 1000px;
+    }
+
+    .popup-image {
+        max-width: 200px;
+        height: auto;
+        object-fit: fill;
+
     }
 </style>
 
@@ -37,8 +44,13 @@
             .then(data => {
                 data.forEach(pin => {
                     const marker = L.marker([pin.lat, pin.lng]).addTo(map);
-                    marker.bindPopup(`${pin.name}<br>${pin.description}`);
-                    console.log(`pin.name} Loaded` + Date());
+                    const img = `<img src=' ${pin.img}' class = "popup-image">`;
+                    marker.bindPopup(`
+                    ${img} <br> 
+                    <b> ${pin.title} <br>
+                    ${pin.description}
+                    `);
+
                 });
             })
             .catch(error => console.error('Error loading JSON:', error));
