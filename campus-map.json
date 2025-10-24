@@ -1,0 +1,20 @@
+[
+    {
+        "name": "ICS Laboraorytory",
+        "title": "ICS Lab 1",
+        "description": "This is the ICS laboratory 1, yipee!",
+        "img": "https://www.gruppolife.com/Media/Blog/You%26Meme/you-and-meme.png",
+        "lat": "8.3593",
+        "lng": "124.8691",
+        "locationType" : "Laboratory"
+    },
+    {
+        "name": "Comfort Room 1",
+        "title": "CR nga way yabi",
+        "description": "Walay yabi nga CR",
+        "img": "https://i1.sndcdn.com/artworks-DW1YYdgHCvkmy0Hb-z69Rhw-t500x500.jpg",
+        "lat": "8.359009695166359",
+        "lng": "124.86911436078864",
+        "locationType" : "Other"
+    }
+]
